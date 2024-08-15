@@ -1,9 +1,10 @@
 #!/usr/bin/node
 
 const numbers = [];
-for (const i in process.argv.slice(2)) {
-  console.log(i);
-  numbers.push(parseInt(process.argv[i + 2]));
+const args = process.argv.slice(2);
+
+for (const i in args) {
+  numbers.push(parseInt(args[i]));
 }
 
 if (numbers.length <= 1) {
