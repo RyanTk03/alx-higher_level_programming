@@ -2,7 +2,7 @@
 
 const numbers = [];
 for (const i in process.argv.slice(2)) {
-  console.log(parseInt(process.argv[i + 2]));
+  console.log(i);
   numbers.push(parseInt(process.argv[i + 2]));
 }
 
