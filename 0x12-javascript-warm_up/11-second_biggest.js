@@ -10,4 +10,4 @@ for (const n of args) {
 if (numbers.length <= 1) {
   console.log('0');
 }
-console.log(numbers.sort().at(-2));
+console.log(numbers.sort()[numbers.length - 2]);
