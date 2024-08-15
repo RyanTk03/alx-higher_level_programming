@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 function factorial(n) {
-  if (!n && n === 1) {
+  if (!n || n === 1) {
     return 1;
   }
   return n * factorial(n - 1);
