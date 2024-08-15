@@ -3,9 +3,9 @@
 const numbers = [];
 const args = process.argv.slice(2);
 
-for (const n of args) {
-  numbers.push(parseInt(n));
-}
+args.forEach(function (a) {
+  numbers.push(parseInt(a));
+});
 
 if (numbers.length <= 1) {
   console.log('0');
