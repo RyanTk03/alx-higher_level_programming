@@ -1,7 +1,8 @@
 #!/usr/bin/node
 
 const numbers = [];
-for (let i in process.argv.slice(2)) {
+for (const i in process.argv.slice(2)) {
+  console.log(parseInt(process.argv[i + 2]));
   numbers.push(parseInt(process.argv[i + 2]));
 }
 
