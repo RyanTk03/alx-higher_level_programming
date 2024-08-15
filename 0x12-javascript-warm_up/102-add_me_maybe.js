@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-exports.addMeMaybe = function (number, cb) {
-  if (typeof cb === 'function') {
-    cb(number + 1);
+exports.addMeMaybe = function (number, theFunction) {
+  if (typeof theFunction === 'function') {
+    theFunction(number + 1);
   }
 };
