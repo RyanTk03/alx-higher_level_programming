@@ -10,5 +10,8 @@ for (const n of args) {
 if (numbers.length <= 1) {
   console.log('0');
 } else {
-  console.log(numbers.sort()[numbers.length - 2]);
+  const sorted = numbers.sort();
+  
+  console.log(sorted);
+  console.log(sorted[sorted.length - 2]);
 }
