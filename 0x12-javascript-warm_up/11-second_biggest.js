@@ -1,17 +1,9 @@
 #!/usr/bin/node
 
-const numbers = [];
-const args = process.argv.slice(2);
+const args = process.argv.slice(2).map(Number);
 
-args.forEach(function (a) {
-  numbers.push(parseInt(a));
-});
-
-if (numbers.length <= 1) {
+if (args.length <= 1) {
   console.log('0');
 } else {
-  const sorted = numbers.sort();
-  
-  console.log(sorted);
-  console.log(sorted[sorted.length - 2]);
+  console.log(args[args.length - 2]);
 }
