@@ -3,8 +3,8 @@
 const numbers = [];
 const args = process.argv.slice(2);
 
-for (const i in args) {
-  numbers.push(parseInt(args[i]));
+for (const n of args) {
+  numbers.push(parseInt(n));
 }
 
 if (numbers.length <= 1) {
