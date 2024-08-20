@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Contains the class definition of a City."""
+"""
+Contains the class definition of a City.
+"""
 import sqlalchemy
 from model_state import Base, State
 

@@ -1,4 +1,8 @@
-"""Prints the first State object from the given database"""
+#!/usr/bin/python3
+"""
+A script that lists all State objects that contain the letter a from the
+given database.
+"""
 import sys
 import sqlalchemy
 from model_state import Base State

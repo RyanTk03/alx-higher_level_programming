@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-A script that prints the State object with the name passed as argument from
-the given database
+A script that deletes all State objects with a name containing the letter a
+from the given database
 """
 import sys
 import sqlalchemy

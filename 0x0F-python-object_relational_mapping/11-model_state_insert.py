@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-A script that prints the State object with the name passed as argument from
-the given database
+A script that insert the state 'Louisiana' within the the given database.
 """
 import sys
 import sqlalchemy
