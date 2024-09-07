@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Class definition of a State.
-"""
+""" Class definition of a State. """
 import sqlalchemy
 from sqlalchemy.orm import relationship
 
