@@ -19,12 +19,11 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     session = sqlalchemy.orm.Session(engine)
 
-    results = session.query(State).filter(State.name == state_name)
+    state = session.query(State).filter(State.name == state_name)
 
-    if len(results) == 0:
+    if state is None:
         print('Not found')
     else:
-        for state in results:
-            print(state.id)
+        print(state.id)
 
     session.close()

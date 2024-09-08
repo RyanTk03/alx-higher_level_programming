@@ -17,8 +17,11 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     session = sqlalchemy.orm.Session(engine)
 
-    results = session.query(State).filter(State.name.like('%a%'))
-    .order_by(State.id)
+    results = (
+        session.query(State)
+        .filter(State.name.like('%a%'))
+        .order_by(State.id)
+    )
     for state in results:
         print('{}: {}'.format(state.id, state.name))
 

@@ -17,7 +17,7 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     session = sqlalchemy.orm.Session(engine)
 
-    state = session.query(State).filter(State.id=2)
+    state = session.query(State).filter(State.id == 2)
     state.name = 'New Mexico'
 
     session.commit()
