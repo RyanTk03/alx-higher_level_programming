@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-""" Class definition of a State. """
+"""
+Contains the class definition of a State and an instance of the Base class.
+"""
+
+
 import sqlalchemy
-from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 
 
-Base = sqlalchemy.ext.declarative.declarative_base()
+Base = declarative_base()
 
 
 class State(Base):
-    """Class State"""
+    """Represents a state in the MySQL database."""
 
     __tablename__ = 'states'
 
