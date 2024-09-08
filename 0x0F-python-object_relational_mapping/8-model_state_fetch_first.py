@@ -4,7 +4,7 @@ Prints the first State object from the given database.
 """
 import sys
 import sqlalchemy
-from model_state import Base State
+from model_state import Base, State
 
 
 if __name__ == '__main__':
